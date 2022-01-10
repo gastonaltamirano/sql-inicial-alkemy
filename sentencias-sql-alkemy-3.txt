@@ -1,0 +1,41 @@
+1)
+
+SELECT profesor.nombre, profesor.apellido, profesor.fecha_nac
+FROM profesor
+ORDER BY profesor.fecha_nac ASC;
+
+
+2)
+
+SELECT *
+FROM profesor
+WHERE profesor.salario>=65000;
+
+
+3)
+
+SELECT *
+FROM profesor
+WHERE profesor.fecha_nac BETWEEN '1980-01-01' AND '1989-12-31';
+
+
+4)
+
+SELECT *
+FROM profesor
+LIMIT 5;
+
+
+5)
+
+SELECT *
+FROM profesor
+WHERE profesor.apellido LIKE 'P%';
+
+
+6)
+
+SELECT *
+FROM profesor
+WHERE profesor.salario>=80000
+AND profesor.fecha_nac BETWEEN '1980-01-01' AND '1989-12-31';
